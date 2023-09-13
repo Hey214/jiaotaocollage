@@ -1,12 +1,126 @@
-{
-	"folders": [
-		{
-			"path": "."
-		}
-	],
-	"settings": {},
-	"launch": {
-		"version": "0.2.0",
-		"configurations": []
-	}
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>60th Anniversary School Website</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #e5ff00;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        h1 {
+            margin-top: 0;
+        }
+        
+        nav {
+            background-color: #ffaf04;
+            color: #0bc0e0;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+        
+        nav a {
+            color: #0362bb;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        
+        main {
+            margin: 20px;
+        }
+        
+        footer {
+            background-color: #f2f2f2;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>歡迎來到鑑濤中學60周年校慶網址</h1>
+        <img src="jiaotao.png" alt="鑑濤中學60周年校徽" width="200" height="200">
+        <p>1963年創校</p>
+        <h1 class="鑑濤中學60周年校慶">鑑濤中學60周年校慶</h1>
+    </header>
+
+    <nav>
+        <a href="#about">關於</a>
+        <a href="#programs">資訊</a>
+        <a href="#events">活動</a>
+        <a href="booking">線上預訂盆菜</a>
+        <a href="#contact">聯絡我們</a>
+    </nav>
+
+    <main>
+        <section id="about">
+            <h2>關於鑑濤中學60周年校慶</h2>
+            <p>鑑濤中學成立於1960年，今年即將迎來60週年校慶。多年來，我們致力於提供高品質的教育，培養學生們的學術知識和品格品質。這次校慶是一個重要的里程碑，
+
+                我們將舉辦一系列精彩的活動和表演，包括校友聚會、文藝表演、運動賽事等，讓學生、教職員和校友們共同慶祝這個特殊的時刻。我們希望透過這次校慶，展現出鑑濤中學的辦學成果和發展成就，並繼續為學生們提供更優質的教育環境和學習機會。</p>
+        </section>
+
+        <section id="programs">
+            <h2>校慶資訊</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet tellus ut elit porttitor dignissim. Duis id magna leo. Sed sed arcu elit. Proin aliquet enim urna, sit amet fermentum nisi semper sit amet.</p>
+            <p>Quisque volutpat feugiat ex non bibendum. Sed at dignissim sem. Etiam congue, libero vitae pellentesque vehicula, felis dui gravida neque, non bibendum turpis justo vel tellus. Sed congue finibus sagittis. Integer eu fringilla nunc.</p>
+        </section>
+
+        <section id="events">
+            <h2>校慶活動</h2>
+            <ul>
+                <li>Event 1 - July 10th, 2023</li>
+                <li>Event 2 - August 5th, 2022</li>
+                <li>Event 2 - September 20th, 2022</li>
+                <li>Event 1 - July 10th, 2022</li>
+                <li>Event 3 - August 5th, 2022</li>
+                <li>Event 3 - September 20th, 2022</li>
+            </ul>
+        </section>
+        
+        <section id="booking">
+            <h2>線上預訂盆菜</h2>
+            <ul>
+                <form action="submit_reservation.php" method="POST">
+                    <label for="name">姓名:</label>
+                    <input type="text" id="name" name="name" required>
+            
+                    <label for="email">電郵地址:</label>
+                    <input type="email" id="email" name="email" required>
+            
+                    <label for="phone number">電話號碼:</label>
+                    <input type="number" id="phone number" name="phone number" required>  
+
+                    <label for="number of people">出席人數:</label>
+                    <input type="number" id="number of people" name="number of people" min="1" required>
+            
+                    <input type="submit" value="提交">
+                </form>
+            </ul>
+        </section>
+        
+        <section id="contact">
+            <h2>聯絡我們</h2>
+            <p>電郵地址: Jiaotaocollage@gmail.com</p>
+            <p>電話號碼: 1324 5678</p>
+            <p>學校地址: 香港灣仔星界78號</p>
+        </section>
+    </main>
+
+    <footer>
+        © 2022Jiaotaocollage. All rights reserved.
+    </footer>
+</body>
+</html>
