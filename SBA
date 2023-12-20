@@ -1,6 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+   
+    <style>
+        .slideshow {
+            position: relative;
+            overflow: hidden;
+            width: 400px;
+            height: 300px;
+        }
+
+
+
+
+
+
+
+
+        .slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+
+
+
+
+
+
+
+        .active {
+            opacity: 1;
+        }
+    </style>
+   
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>60th Anniversary School Website</title>
@@ -11,17 +48,17 @@
             margin: 0;
             padding: 0;
         }
-        
+       
         header {
             background-color: #e5ff00;
             padding: 20px;
             text-align: center;
         }
-        
+       
         h1 {
             margin-top: 0;
         }
-        
+       
         nav {
             background-color: #ffaf04;
             color: #0bc0e0;
@@ -29,96 +66,265 @@
             justify-content: center;
             padding: 10px;
         }
+       
+        nav a {
+            color: #0362bb;
+            margin: 0 10px;
+            text-decoration: none;
         
         nav a {
             color: #0362bb;
             margin: 0 10px;
             text-decoration: none;
         }
-        
+       
         main {
             margin: 20px;
         }
-        
+       
         footer {
             background-color: #f2f2f2;
             padding: 20px;
             text-align: center;
         }
     </style>
-</head>
+
+
+
+
+
+
+
 
 <body>
+    <div class="intro" style="top: -100vh;">
+        <class="logo-header">
+            <span class="logo fade">鑑濤中學</span>
+            <span class="logo fade">60周年校慶</span>
+            <br>
+            <span class="logo fade"><img src="content://media/external/downloads/378"></span>
+           
+    </div>
     <header>
         <h1>歡迎來到鑑濤中學60周年校慶網址</h1>
-        <img src="jiaotao.png" alt="鑑濤中學60周年校徽" width="200" height="200">
+        <img src="https://www.w3schools.com/w3images/avatar_g2.jpg" alt="鑑濤中學60周年校徽" width="200" height="200">
         <p>1963年創校</p>
         <h1 class="鑑濤中學60周年校慶">鑑濤中學60周年校慶</h1>
     </header>
+    
+    <marquee class="css2" direction="left"><h2>鑑濤中學成立於1960年，今年即將迎來60週年校慶。多年來，我們致力於提供高品質的教育，培養學生們的學術知識和品格品質。這次校慶是一個重要的里程碑， 我們將舉辦一系列精彩的活動和表演，包括校友聚會、文藝表演、運動賽事等，讓學生、教職員和校友們共同慶祝這個紀念性的時刻。我們希望透過這次校慶，展現出鑑濤中學的辦學成果和發展成就，並繼續為學生們提供更優質的教育環境和學習機會。<h2></marquee>
+
 
     <nav>
         <a href="#about">關於</a>
         <a href="#programs">資訊</a>
-        <a href="#events">活動</a>
-        <a href="booking">線上預訂盆菜</a>
+<div class="pagination">
+       
+<button type="活動內容='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>活動內容</button>
+
+
+        <a href="#" class="2">線上預訂盆菜盛會</a>
+        <a href="#" class="3">回顧視訊</a>
+</div>
         <a href="#contact">聯絡我們</a>
+       
     </nav>
 
+
+
+
+
+
+
+
+<div class="content">
+
+
+
+
+</div>
     <main>
         <section id="about">
             <h2>關於鑑濤中學60周年校慶</h2>
-            <p>鑑濤中學成立於1960年，今年即將迎來60週年校慶。多年來，我們致力於提供高品質的教育，培養學生們的學術知識和品格品質。這次校慶是一個重要的里程碑，
-
-                我們將舉辦一系列精彩的活動和表演，包括校友聚會、文藝表演、運動賽事等，讓學生、教職員和校友們共同慶祝這個特殊的時刻。我們希望透過這次校慶，展現出鑑濤中學的辦學成果和發展成就，並繼續為學生們提供更優質的教育環境和學習機會。</p>
+            <p>鑑濤中學成立於1960年，今年即將迎來60週年校慶。多年來，我們致力於提供高品質的教育，培養學生們的學術知識和品格品質。這次校慶是一個重要的里程碑，我們將舉辦一系列精彩的活動和表演，包括校友聚會、文藝表演、運動賽事等，讓學生、教職員和校友們共同慶祝這個紀念性的時刻。我們希望透過這次校慶，展現出鑑濤中學的辦學成果和發展成就，並繼續為學生們提供更優質的教育環境和學習機會。</p>
         </section>
+
+
+
+
+
+
+
 
         <section id="programs">
-            <h2>校慶資訊</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet tellus ut elit porttitor dignissim. Duis id magna leo. Sed sed arcu elit. Proin aliquet enim urna, sit amet fermentum nisi semper sit amet.</p>
-            <p>Quisque volutpat feugiat ex non bibendum. Sed at dignissim sem. Etiam congue, libero vitae pellentesque vehicula, felis dui gravida neque, non bibendum turpis justo vel tellus. Sed congue finibus sagittis. Integer eu fringilla nunc.</p>
+            <h1>歡慶本校60週年校慶</h1>
+
+
+
+
+
+
+
+
+            <p>親愛的師生、校友與貴賓：</p>
+       
+            <p>本校將於<strong class="highlight">2023年暑假</strong>隆重慶祝建校<strong class="highlight">60週年校慶</strong>，歡迎大家共襄盛舉！</p>
+       
+            <p>校慶活動詳細資訊如下：</p>
+       
+            <ul>
+                <li><strong>日期：</strong>7月10日至9月20日</li>
+                <li><strong>地點：</strong>本校校園</li>
+                <li><strong>活動內容：</strong>包括校慶遊行、展覽、學術研討會、文藝演出等多項精彩活動</li>
+                <li><strong>校友返校日：</strong>8月5日，歡迎各屆校友回校參加盛會</li>
+            </ul>
+       
+            <p>詳細活動安排將於近期公布於本校網站及相關社群媒體平台，敬請密切注意最新訊息。</p>
+       
+            <p>讓我們一同慶祝這令人振奮的時刻！謹代表學校全體師生，誠摯邀請您蒞臨參與，共同見證本校的成長與發展。</p>
+       
+            <p>敬祝  60週年校慶圓滿成功！</p>
+       
+            <p>敬祝 平安幸福！</p>
+       
+            <p>鑑濤中學中學校長 陳曉得敬上</p>
         </section>
 
-        <section id="events">
+
+
+
+
+
+
+
+       <div class="content"
             <h2>校慶活動</h2>
             <ul>
-                <li>Event 1 - July 10th, 2023</li>
-                <li>Event 2 - August 5th, 2022</li>
-                <li>Event 2 - September 20th, 2022</li>
-                <li>Event 1 - July 10th, 2022</li>
-                <li>Event 3 - August 5th, 2022</li>
-                <li>Event 3 - September 20th, 2022</li>
+                <li><strong>活動 1</strong> - 7月10日 - 校慶遊行</li>
+                <li><strong>活動 2</strong> - 7月25日 - 校慶展覽</li>
+                <li><strong>活動 3</strong> - 7月26日 - 學術研討會</li>
+                <li><strong>活動 4</strong> - 8月23日 - 文藝演出</li>
+                <li><strong>活動 5</strong> - 8月20日 - 60周年校慶紀錄片</li>
+                <li><strong>活動 6</strong> - 8月29日 - 校慶盆菜盛會</li>
             </ul>
-        </section>
-        
+       </div>#ffeceff1
+       
         <section id="booking">
-            <h2>線上預訂盆菜</h2>
+            <h2>線上預訂盆菜盛會</h2>
             <ul>
                 <form action="submit_reservation.php" method="POST">
                     <label for="name">姓名:</label>
                     <input type="text" id="name" name="name" required>
-            
+           
                     <label for="email">電郵地址:</label>
                     <input type="email" id="email" name="email" required>
-            
+           
                     <label for="phone number">電話號碼:</label>
                     <input type="number" id="phone number" name="phone number" required>  
 
+
+
+
+
+
+
+
                     <label for="number of people">出席人數:</label>
                     <input type="number" id="number of people" name="number of people" min="1" required>
-            
+           
                     <input type="submit" value="提交">
                 </form>
             </ul>
         </section>
-        
+        <section id="video"></section>
+        <h2>回顧視訊</h2>
+        <video controls>
+            <source src="video.mp4" type="video/mp4">
+        </video>
+       
         <section id="contact">
             <h2>聯絡我們</h2>
             <p>電郵地址: Jiaotaocollage@gmail.com</p>
             <p>電話號碼: 1324 5678</p>
             <p>學校地址: 香港灣仔星界78號</p>
         </section>
-    </main>
 
+
+    </main>
+    <div class="w3-row-padding">
+        <div class="w3-third w3-container w3-margin-bottom">
+          <img src="https://www.w3schools.com/w3images/mountains.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">    
+        <div class="w3-third w3-container w3-margin-bottom">
+          <img src="https://www.w3schools.com/w3images/lights.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">   
+        </div>
+        <div class="w3-third w3-container">
+          <img src="https://www.w3schools.com/w3images/nature.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+        </div>
+      </div>
+      
+      <div class="w3-row-padding">
+        <div class="w3-third w3-container w3-margin-bottom">
+          <img src="https://www.w3schools.com/w3images/p1.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+
+          </div>
+        </div>
+        <div class="w3-third w3-container w3-margin-bottom">
+          <img src="https://www.w3schools.com/w3images/p2.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+
+          </div>
+        </div>
+        <div class="w3-third w3-container">
+          <img src="https://www.w3schools.com/w3images/p3.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+
+          </div>
+        </div>
+      </div>
+    
+      <div class="w3-center w3-padding-32">
+        <div class="w3-bar">
+          <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+          <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+          <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+          <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+          <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+          <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+        </div>
+      </div>
+    
+      <div class="w3-row-padding w3-padding-16" id="about">
+        <div class="w3-col m6">
+          <img src="https://www.w3schools.com/w3images/avatar_g.jpg" alt="Me" style="width:100%">
+        </div>
+        <div class="w3-col m6">
+          <img src="https://www.w3schools.com/w3images/me2.jpg" alt="Me" style="width:100%">
+        </div>
+      </div>
+    
+      <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+        <h4><b>About Me</b></h4>
+        <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        <hr>
+        
+        <h4>Technical Skills</h4>
+
+        <p>Photography</p>
+        <div class="w3-grey">
+          <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:95%">95%</div>
+        </div>
+        <p>Web Design</p>
+        <div class="w3-grey">
+          <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:85%">85%</div>
+        </div>
+        <p>Photoshop</p>
+        <div class="w3-grey">
+          <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:80%">80%</div>
+        </div>
+        <p>
+          <button class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom">
+            <i class="fa fa-download w3-margin-right"></i>Download Resume
+          </button>
+        </p>
+        <hr>
     <footer>
         © 2022Jiaotaocollage. All rights reserved.
     </footer>
